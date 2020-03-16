@@ -122,7 +122,7 @@ start(Partition, Config) ->
     PCL = app_helper:get_prop_or_env(ledger_pagecachelevel, Config, leveled),
 
     BackendPause = app_helper:get_env(riak_kv, backend_pause_ms, ?PAUSE_TIME),
-    LCR = app_helper:get_env(riak_kv, leveled_reload_recalc, false),
+    LCR = app_helper:get_env(riak_kv, leveled_reload_recalc, true),
 
     case get_data_dir(DataRoot, integer_to_list(Partition)) of
         {ok, DataDir} ->

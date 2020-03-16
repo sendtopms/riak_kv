@@ -1133,6 +1133,6 @@
 %% a diff_index_specs calculation when reloading each object.
 {mapping, "leveled_reload_recalc", "riak_kv.leveled_reload_recalc", [
     {datatype, {flag, enabled, disabled}},
-    {default, disabled},
+    {default, enabled},
     {commented, enabled}
 ]}.
