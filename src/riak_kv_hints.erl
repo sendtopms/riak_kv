@@ -83,7 +83,7 @@
 %% 13000 | 1.74% | 14.55 
 %%     - note that this is too big a number of keys for this FPR
 %%
-%% Where the length of a KeyList is juts bigger than a factor of 2 the 
+%% Where the length of a KeyList is just bigger than a factor of 2 the 
 %% actual BitsPerKey will be lower, and the fasl-positive rate higher.  As
 %% the length gets closer to the next factor of 2 the BitsPerKey increases and
 %% the false positive rate drops.
